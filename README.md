@@ -15,6 +15,19 @@ Note: In 2020/21 Ekstraklasa season only 1 instead of 2, teams were relegated du
 The number of points that would be needed if two teams were relegated is given in brackets.
 
 ## Data
-First step of every data-related project is obtaining required data. All neccessary information such as: team participating in a certain match, score and date were webscrapped from http://www.90minut.pl/liga/1/liga12330.html using Beautiful Soup package.
+First step of every data-related project is obtaining required data. All neccessary information such as: team participating in a certain match, score and date were webscrapped from http://www.90minut.pl/liga/1/liga12330.html using Beautiful Soup library.
 
-## Ideas for linking sports performance to team form 
+##  Standard way to score a football match
+The standard scoring system in football matches typically follows the structure:
+
+Win: 3 points for the winning team
+
+Draw: 1 point for each team
+
+Loss: 0 points for the losing team
+
+## Idea to involve form of teams into scoring system
+The idea for this project appeared when I have read an online article. Unfortunately I was not able to find it now (as of 5.02.2024, if I come across it, it will be linked here). Article dealt with the small differences between the relegated teams from the Polish Ekstraklasa and the teams that took the last safe places. Moreover there was shown that in comparison to top 5 leagues, Polish Ekstraklasa is exceptionally hard for lower tier teams which usually fight to avoid relegation. This exceptional difficulty comes from high amount of points needed to avoid relegation. 
+
+Knowing the above correlations, it is easy to conclude that the outcome of a single match can have a major impact on the final result of certain team. 
+
