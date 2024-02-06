@@ -1,4 +1,4 @@
-# HOW FORM INFLUENCES FINAL OUTCOME 
+# How form may inflence final outcome? 
 The idea for this project emerged after the conclusion of the Ekstraklasa (Polish top-tier football league) in the 2022/23 season. In those competition, several teams had a similar pattern throughout the season, with one part of their season performance being very good and the other quite poor. This situation affected teams such as Widzew Łódź, Piast Gliwice, Korona Kielce, Górnik Zabrze and Wisła Płock. In the case of the latter, a disastrous second part of the season resulted in relegation from the league despite the fact that the team had been the leader for the first 9 rounds. Polish Ekstraklasa teams are requried to obtain more points per game to avoid relegation than top 5 european league teams.
 
 ## How many points per game need team to avoid relegation?
@@ -27,7 +27,20 @@ Draw: 1 point for each team
 Loss: 0 points for the losing team
 
 ## Idea to involve form of teams into scoring system
-The idea for this project appeared when I have read an online article. Unfortunately I was not able to find it now (as of 5.02.2024, if I come across it, it will be linked here). Article dealt with the small differences between the relegated teams from the Polish Ekstraklasa and the teams that took the last safe places. Moreover there was shown that in comparison to top 5 leagues, Polish Ekstraklasa is exceptionally hard for lower tier teams which usually fight to avoid relegation. This exceptional difficulty comes from high amount of points needed to avoid relegation. 
+The idea for this project appeared when I have read an online article. Unfortunately I was not able to find it now (as of 5.02.2024, if I come across it, it will be linked here). Article dealt with the small differences between the relegated teams from the Polish Ekstraklasa and the teams that took the last safe places. Moreover there was shown that in comparison to top 5 leagues, Polish Ekstraklasa is exceptionally hard for lower tier teams which usually fight to avoid relegation. This exceptional difficulty comes from high amount of points needed to avoid relegation. Team, on average, needs over 1 point per game to avoid relegation.
 
-Knowing the above correlations, it is easy to conclude that the outcome of a single match can have a major impact on the final result of certain team. 
+Knowing the above correlations, it is easy to conclude that the outcome of a single match can have a major impact on the final result of certain team. If only one match can have huge impact there is always question about how luck influences the result.
+
+Obviously it is nearly impossible to estimate influence of luck in just one single match. One fortuitous on-field event can decide the number of points scored by a team in a match. This can confuse the less attentive spectator as to the quality of a team's play in a particular match. On the other hand, if a team regularly performs poorly it may mean that either the quality of individual players is unsatisfactory or the coach's way of playing is not working.         
+What if the coach makes changes to the formation and team's form improves, or puts in substitiute players and they bring more quality to the game? What if current coach gets fired and under rule of new menager team performs much better? What if the team we were playing against just happens to be in a few game crisis       or, conversely, is on an upswing. What if there is a team in the league that just happens to always play against teams which are in poor or good form at that time? They may find themselves much higher or much lower in final league table in relation to their real abilities. 
+
+That is why I wanted check if including form of every team into scoring system will change final results.
+
+## Rulebook 
+To check how form may change final outcome, I decided to follow couple of diffrent strategies:
+
+### First set of regulations
+
+First idea assumes that first four matches of new season and four first after winter break are scored as usual.
+Then for each team participating in a game, there is calculated thier score from last 4 matches.
 
