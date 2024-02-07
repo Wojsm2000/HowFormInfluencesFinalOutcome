@@ -44,7 +44,7 @@ To check how form may change final outcome, I decided to follow couple of diffre
 First idea assumes that first four matches of new season and four first matches after winter break are scored as usual.
 Then for each team participating in a game, we calculate how well they performed in last 4 matches. Then the final amount of points for a particular game for each team is calculated as:
 
-Final score = Standard points + Accumulated points from rival
+Final score = Standard points + Accumulated points of rival's index form
 
 where:
 Accumulated points from rival are calculated as sum of form index from four last matches.
@@ -76,5 +76,14 @@ Wisła Płock: 0 points from deafeat + (0.25+0-0.25-0.25) from index form of a r
  
 This algorithm is applied to all matches in the season (apart from first 4 matches of the season and 4 first games after winter break for each team).
 
+There is also one important disclamer. Team is not allowed to get points from defeat. That situation could arise when, despiate being defeated, team X played team Y which had positive value of index form from 4 last matches. 
+
 #### Final table and conclusions 
+Ekstraklasa 2022/23 official final standings:
+
+![image](https://github.com/Wojsm2000/HowFormInfluencesFinalOutcome/assets/95697097/133ce8f6-351a-4ec6-9aa9-2860e66726f5)
+
+Ekstraklasa 2022/23 standings according to presented algorithm:
+
+![image](https://github.com/Wojsm2000/HowFormInfluencesFinalOutcome/assets/95697097/45209715-60a1-45fc-a2e8-7b7dfafc65b8)
 
