@@ -64,6 +64,17 @@ Widzew Łódź recorded:
 
 ![image](https://github.com/Wojsm2000/HowFormInfluencesFinalOutcome/assets/95697097/489c14f1-2bea-4413-8a61-67bafad45b34)
 
+1 win, 1 draw and 2 defeats.
 
+For each win in this set of regulations I decided to give each team 0.25 points for win, 0 for draw and -0.25 for defeat.
 
+In this case final score for each team is as follows:
+
+Widzew Łódź: 3 points from win + (0+0.25+0.25+0.25) from index form of a rival = 3.75
+
+Wisła Płock: 0 points from deafeat + (0.25+0-0.25-0.25) from index form of a rival = -0.25
+ 
+This algorithm is applied to all matches in the season (apart from first 4 matches of the season and 4 first games after winter break for each team).
+
+#### Final table and conclusions 
 
