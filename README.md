@@ -87,3 +87,15 @@ Ekstraklasa 2022/23 standings according to presented algorithm:
 
 ![image](https://github.com/Wojsm2000/HowFormInfluencesFinalOutcome/assets/95697097/45209715-60a1-45fc-a2e8-7b7dfafc65b8)
 
+What is suprising only 2 out of 18 teams received less points in official table than in algorithm table. Both of these teams are top tier clubs in Polish Ekstraklasa: Pogoń Szczecin and Legia Warszawa. The biggest difference between official and algorithm score comes form Jagielonia Białystok. Jagielonia reached 41 points in official table and only 36 in algorithm table. 
+
+There are two important diffrences between these two final standings. 
+
+Lech Poznań(3.) and Pogoń Szczecin(4.) swapped places in the unofficial table. I don not feel need to explain why finishg fourth, especially when one is close to the third place, is worst feeling for any sport team/athlete. 
+
+The most important switch came in relegation zone. According to algorithm table the 16th place should have been occupied by Śląsk Wrocław contrary to official table where Wisła Płock finished 16th and was relegated from top Polish division.
+
+![image](https://github.com/Wojsm2000/HowFormInfluencesFinalOutcome/assets/95697097/3ce93b52-bcea-498c-8fdf-c98a0852d3d9)
+
+
+
