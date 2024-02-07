@@ -41,6 +41,29 @@ To check how form may change final outcome, I decided to follow couple of diffre
 
 ### First set of regulations
 
-First idea assumes that first four matches of new season and four first after winter break are scored as usual.
-Then for each team participating in a game, there is calculated thier score from last 4 matches.
+First idea assumes that first four matches of new season and four first matches after winter break are scored as usual.
+Then for each team participating in a game, we calculate how well they performed in last 4 matches. Then the final amount of points for a particular game for each team is calculated as:
+
+Final score = Standard points + Accumulated points from rival
+
+where:
+Accumulated points from rival are calculated as sum of form index from four last matches.
+Let us take a closer look how does it look in practice:
+![image](https://github.com/Wojsm2000/HowFormInfluencesFinalOutcome/assets/95697097/cb8d656c-5f33-4fcb-8b26-a5f5e62c48d6)
+
+We would like to calculate form of each teams prior to that particular match because we can get the standard points with ease.
+In that particular situation 3 points go to Widzew Łódź and 0 to Wisła Płock.
+Next we have to take a look at last 4 matches of each team.
+Wisła Płock recorded:
+
+![image](https://github.com/Wojsm2000/HowFormInfluencesFinalOutcome/assets/95697097/058e93c1-24aa-4cf6-bc6d-d63a6b683c23)
+
+3 wins and 1 draw. 
+
+Widzew Łódź recorded:
+
+![image](https://github.com/Wojsm2000/HowFormInfluencesFinalOutcome/assets/95697097/489c14f1-2bea-4413-8a61-67bafad45b34)
+
+
+
 
