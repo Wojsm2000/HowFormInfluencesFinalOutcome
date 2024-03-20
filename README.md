@@ -1,5 +1,5 @@
 # How form may inflence final outcome? 
-The idea for this project emerged after the conclusion of the Ekstraklasa (Polish top-tier football league) in the 2022/23 season. In those competition, several teams had a similar pattern throughout the season, with one part of their season performance being very good and the other quite poor. This situation affected teams such as Widzew Łódź, Piast Gliwice, Korona Kielce, Górnik Zabrze and Wisła Płock. In the case of the latter, a disastrous second part of the season resulted in relegation from the league despite the fact that the team had been the leader for the first 9 rounds. Polish Ekstraklasa teams are requried to obtain more points per game to avoid relegation than top 5 european league teams.
+The idea for this project was born after the end of the 2022/23 season of the Ekstraklasa (Polish Premier League). In that competition, several teams had a similar pattern throughout the season, with one part of the season being very good and the other quite poor. This situation affected teams such as Widzew Łódź, Piast Gliwice, Korona Kielce, Górnik Zabrze and Wisła Płock. In the case of the latter, a disastrous second half of the season saw them relegated from the league despite leading the table for the first 9 rounds. Polish Ekstraklasa teams have to score more points per game to avoid relegation than the top 5 teams in the European leagues.
 
 ## How many points per game need team to avoid relegation?
 |Season|Premier League|La Liga|Ligue 1|Seria A|Bundesliga|Ekstraklasa|
@@ -11,11 +11,11 @@ The idea for this project emerged after the conclusion of the Ekstraklasa (Polis
 | 2018/19      |0.92|1.00|0.92      |    1.00 |0.85     |    1.1 |
 | Mean      |0.89|0.99|0.93      |    0.89 |0.95     |    1.03 (1.06) |
 
-Note: In 2020/21 Ekstraklasa season only 1 instead of 2, teams were relegated due to expension of league from 16 to 18 teams in season 2021/22. 
-The number of points that would be needed if two teams were relegated is given in brackets.
+Note: In the 2020/21 Ekstraklasa season only 1 instead of 2 teams were relegated due to the expansion of the league from 16 to 18 teams in the 2021/22 season. 
+The number of points needed for two relegations is given in brackets.
 
 ## Data
-First step of every data-related project is obtaining required data. All neccessary information such as: team participating in a certain match, score and date were webscrapped from http://www.90minut.pl/liga/1/liga12330.html using Beautiful Soup library.
+The first step in any data-related project is to get the data you need. All the necessary information, such as the team playing in a particular match, the score and the date, was web-scraped from http://www.90minut.pl/liga/1/liga12330.html using the Beautiful Soup library.
 
 ##  Standard way to score a football match
 The standard scoring system in football matches typically follows the structure:
@@ -27,21 +27,21 @@ Draw: 1 point for each team
 Loss: 0 points for the losing team
 
 ## Idea to involve form of teams into scoring system
-The idea for this project appeared when I have read an online article. Unfortunately I was not able to find it now (as of 5.02.2024, if I come across it, it will be linked here). Article dealt with the small differences between the relegated teams from the Polish Ekstraklasa and the teams that took the last safe places. Moreover there was shown that in comparison to top 5 leagues, Polish Ekstraklasa is exceptionally hard for lower tier teams which usually fight to avoid relegation. This exceptional difficulty comes from high amount of points needed to avoid relegation. Team, on average, needs over 1 point per game to avoid relegation.
+The idea for this project came to me when I read an online article. Unfortunately, I have not been able to find it now (as of 5.02.2024, if I come across it, it will be linked here). The article was about the small differences between the relegated teams from the Polish Ekstraklasa and the teams that took the last safe places. It was also shown that in comparison to the top 5 leagues, the Polish Ekstraklasa is exceptionally difficult for the lower league teams, which usually fight to avoid relegation. This exceptional difficulty is due to the high number of points needed to avoid relegation. On average, a team needs more than 1 point per match to avoid relegation.
 
-Knowing the above correlations, it is easy to conclude that the outcome of a single match can have a major impact on the final result of certain team. If only one match can have huge impact there is always question about how luck influences the result.
+Knowing the above correlations, it is easy to conclude that the outcome of a single match can have a huge impact on a team's final result. If a single match can have a huge impact, then the question arises as to how luck affects the result.
 
-Obviously it is nearly impossible to estimate influence of luck in just one single match. One fortuitous on-field event can decide the number of points scored by a team in a match. This can confuse the less attentive spectator as to the quality of a team's play in a particular match. On the other hand, if a team regularly performs poorly it may mean that either the quality of individual players is unsatisfactory or the coach's way of playing is not working.         
-What if the coach makes changes to the formation and team's form improves, or puts in substitiute players and they bring more quality to the game? What if current coach gets fired and under rule of new menager team performs much better? What if the team we were playing against just happens to be in a few game crisis       or, conversely, is on an upswing. What if there is a team in the league that just happens to always play against teams which are in poor or good form at that time? They may find themselves much higher or much lower in final league table in relation to their real abilities. 
+Of course, it is almost impossible to estimate the influence of luck in a single match. A random event on the pitch can determine the number of points a team scores in a match. This can confuse the less attentive spectator as to the quality of a team's play in a particular match. On the other hand, if a team is performing poorly on a regular basis, it may mean that either the quality of individual players is unsatisfactory, or the coach's style of play is not working.         
+What if the manager changes the formation and the team's form improves, or brings in substitutes and they bring more quality to the game? What if the current manager is sacked and the team performs much better under the new manager? What if the team we are playing against happens to be in crisis or on the up? What if there is a team in the league that happens to always play teams that are in bad or good form? They could find themselves much higher or much lower in the final league table in relation to their actual ability. 
 
-That is why I wanted check if including form of every team into scoring system will change final results.
+This is why I wanted to see if the inclusion of each team's form in the scoring system would have any effect on the final results.
 
 ## Rulebook 
 To check how form may change final outcome, I decided to follow couple of diffrent strategies:
 
-### First set of regulations
+### Set of regulations
 
-First idea assumes that first four matches of new season and four first matches after winter break are scored as usual.
+Idea assumes that first four matches of new season and four first matches after winter break are scored as usual.
 Then for each team participating in a game, we calculate how well they performed in last 4 matches. Then the final amount of points for a particular game for each team is calculated as:
 
 Final score = Standard points + Accumulated points of rival's index form
@@ -97,5 +97,4 @@ The most important switch came in relegation zone. According to algorithm table 
 
 ![image](https://github.com/Wojsm2000/HowFormInfluencesFinalOutcome/assets/95697097/3ce93b52-bcea-498c-8fdf-c98a0852d3d9)
 
-
-
+In above shown Figure we can clearly see that Pogoń Szczecin has highest Accumulated Rival Points score. It means that, suming up all teams form points that certain team played against, team from Szczecin played against teams in the best form overall. On the other hand Raków Częstochowa (2022/23 champions) happend to play against teams when their were in worst from overall. 
